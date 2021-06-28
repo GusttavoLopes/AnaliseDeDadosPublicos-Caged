@@ -1,4 +1,4 @@
-# Estatísticas do Trabalho
+# Estatísticas do Trabalho - Pandemia COVID-19
 Análise de Dados Públicos - CAGED
 
 • Gustavo Lopes
