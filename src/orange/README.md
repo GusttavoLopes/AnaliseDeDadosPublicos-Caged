@@ -1,5 +1,4 @@
-# Workflow Orange do projeto "Um estudo sobre a relação entre isolamento social e empregabilidade  durante o período da pandemia da COVID-19 no Estado de São Paulo."
-
+### Workflow Orange do projeto
 ## Tecnologias usadas
 
 Uso do [Orange](https://orangedatamining.com/) para análises de mineração de dados.
