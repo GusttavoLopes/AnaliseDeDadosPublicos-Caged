@@ -1,7 +1,3 @@
-"""
-Functions to annotate the the são paulo state DRS in a given dataset.
-"""
-
 import unicodedata
 
 import pandas as pd
@@ -41,21 +37,21 @@ def annotate_caged(
         - path to annotated caged base in CSV format.
     """
 
-    # Read CSVs
+    
     caged_df = pd.read_csv(processed_caged_path)
     sp_drs_map_df = pd.read_csv(sp_drs_map_path)
 
-    # Filter SP and Standartize Município field
+    
     caged_df = caged_df[caged_df['UF'] == 'SP'].copy()
     caged_df['Município'] = \
         caged_df['Município'].str.upper()
 
-    # Remove state from city key
+    
     caged_df['Município'] = caged_df['Município'].apply(
         lambda x: x[3:]
     )
 
-    # Remove words accentuation from SP DRS values
+    
     caged_df['Município'] = caged_df['Município'].apply(
         lambda x: _remove_accentuation(x)
     )
@@ -67,7 +63,7 @@ def annotate_caged(
         sp_drs_map_df, on='Município', how='left'
     )
 
-    # Save annotated CAGED data
+    
     annotated_caged_df.to_csv(annotated_caged_path)
 
     return annotated_caged_path
