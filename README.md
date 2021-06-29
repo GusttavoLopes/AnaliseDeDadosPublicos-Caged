@@ -2,6 +2,7 @@
 Análise de Dados Públicos - CAGED
 
 • Gustavo Lopes
+• Victoria Ferreira
 
 ## Descrição
 Análise de dados de Empregabilidade relacionados ao isolamento social durante o período de pandemia da COVID-19. 
